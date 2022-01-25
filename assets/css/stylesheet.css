@@ -1,0 +1,93 @@
+@font-face {
+  font-family: "Trip Sans";
+  src: url("../../fonts/TripSans-Regular.eot");
+  src: url("../../fonts/TripSans-Regular.eot?#iefix")
+      format("embedded-opentype"),
+    url("../../fonts/TripSans-Regular.woff2") format("woff2"),
+    url("../../fonts/TripSans-Regular.woff") format("woff"),
+    url("../../fonts/TripSans-Regular.ttf") format("truetype"),
+    url("../../fonts/TripSans-Regular.svg#TripSans-Regular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+body {
+  font-family: "Trip Sans", sans-serif;
+}
+
+.container {
+  width: 1024px;
+  margin: 0 auto;
+  /* border: 3px solid red; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header {
+  height: 100px;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+}
+
+.menu p {
+  font-size: 15px;
+  margin: 20px;
+}
+
+.menu-button {
+  display: flex;
+  align-items: center;
+
+  /* border: 3px solid red; */
+}
+
+.logo img {
+  width: 200px;
+}
+
+.connexion {
+  background-color: black;
+  color: white;
+  width: fit-content;
+  padding: 15px;
+  border-radius: 30px;
+}
+
+.onglet {
+  display: flex;
+}
+
+h1 {
+  font-size: 50px;
+  font-weight: 1000;
+  /* border: 3px solid red; */
+  margin-top: 50px;
+}
+
+h1 span {
+  color: #ff5d5d;
+}
+
+.onglet {
+  display: flex;
+  border: 3px solid red;
+  width: 100%;
+}
+
+.display-onglet {
+  margin-top: 50px;
+  flex: 1;
+}
+
+section {
+  width: 100%;
+
+  border: 3px solid red;
+}
+main {
+  border: 3px solid blue;
+}
