@@ -1,5 +1,5 @@
 @font-face {
-  font-family: "Trip Sans";
+  font-family: "Trip Sans Regular";
   src: url("../../fonts/TripSans-Regular.eot");
   src: url("../../fonts/TripSans-Regular.eot?#iefix")
       format("embedded-opentype"),
@@ -13,19 +13,28 @@
 }
 body {
   font-family: "Trip Sans", sans-serif;
+  background-color: #ffffff;
 }
 
 .container {
   width: 1024px;
   margin: 0 auto;
-  /* border: 3px solid red; */
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+}
+
+h2 {
+  font-size: 25px;
+  font-weight: 900;
+}
+
+p {
+  line-height: 30px;
 }
 
 header {
   height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .menu {
@@ -41,12 +50,18 @@ header {
 .menu-button {
   display: flex;
   align-items: center;
+}
 
-  /* border: 3px solid red; */
+.menu-button:hover {
+  background-color: #cdd6db;
+  border-radius: 30px;
+  padding: 5px;
+  height: 20px;
 }
 
 .logo img {
   width: 200px;
+  height: 100%;
 }
 
 .connexion {
@@ -65,7 +80,7 @@ h1 {
   font-size: 50px;
   font-weight: 1000;
   /* border: 3px solid red; */
-  margin-top: 50px;
+  margin-top: 20px;
 }
 
 h1 span {
@@ -74,20 +89,139 @@ h1 span {
 
 .onglet {
   display: flex;
-  border: 3px solid red;
-  width: 100%;
+  justify-content: space-between;
+  margin-top: 20px;
+
+  gap: 10px;
 }
 
 .display-onglet {
-  margin-top: 50px;
   flex: 1;
+  display: flex;
+  justify-content: space-around;
+  border: 2px solid black;
+  padding: 10px;
+  border-radius: 10px;
 }
 
-section {
+.display-onglet:hover {
+  background-color: black;
+}
+.display-onglet p:hover {
+  color: white;
+}
+.display-onglet p {
+  font-size: 15px;
+}
+
+.photos-paris {
+  height: 400px;
+  margin-top: 20px;
+  display: flex;
+}
+
+.img-principale {
+  width: 650px;
+  height: 400px;
+  margin-right: 5px;
+}
+
+.enfant2 img {
+  height: 200px;
+  width: 370px;
+}
+
+.photos-paris img {
+  object-fit: cover;
+}
+
+.map-intro {
+  display: flex;
+  margin-top: 50px;
+}
+
+.text {
+  width: 55%;
+  margin-right: 50px;
+}
+.map {
+  width: 45%;
+  margin-left: 10px;
+}
+
+.map p,
+.text p {
+  font-size: 18px;
+  margin-top: 20px;
+}
+
+.map-intro img {
+  object-fit: cover;
   width: 100%;
-
-  border: 3px solid red;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
 }
-main {
-  border: 3px solid blue;
+
+.background-orange {
+  background-color: #fe5d5d;
+  padding: 15px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.bouton {
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  border-radius: 30px;
+  width: 150px;
+}
+
+/* Caroussel */
+.caroussel-title h2 {
+  margin: 20px 0;
+}
+
+.divertir-bandeau {
+  height: 600px;
+  margin-top: 20px;
+  display: flex;
+}
+
+.divertir-text h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.divertir-text {
+  margin-right: 10px;
+  flex: 2;
+}
+
+.divertir-scroll {
+  flex: 3;
+  display: flex;
+  width: 100%;
+  overflow: hidden;
+  overflow-x: scroll;
+}
+
+.img-container i {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background-color: white;
+  font-size: 20px;
+  padding: 5px;
+  border-radius: 50%;
+}
+
+.img-container {
+  position: relative;
+}
+.suivant {
+  height: 300px;
+  /* border: 2px solid palevioletred; */
 }
