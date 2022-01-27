@@ -184,7 +184,7 @@ h1 span {
 }
 
 .divertir-bandeau {
-  height: 300px;
+  height: 350px;
   margin-top: 20px;
   display: flex;
 }
@@ -237,7 +237,31 @@ h1 span {
   height: 100%;
 }
 
+.divertir-scroll-item .img-name {
+  margin: 5px 0;
+}
+
 .suivant {
   height: 300px;
-  /* border: 2px solid palevioletred; */
+}
+
+footer {
+  background-color: #faf1ec;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer img {
+  margin: 15px 0;
+  padding: 10px;
+}
+
+footer a {
+  color: black;
+}
+footer p {
+  font-size: 15px;
+}
+footer a:hover {
+  color: #fe5d5d;
 }
