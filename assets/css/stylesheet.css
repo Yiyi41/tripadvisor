@@ -14,10 +14,11 @@
 body {
   font-family: "Trip Sans", sans-serif;
   background-color: #ffffff;
+  box-sizing: border-box;
 }
 
 .container {
-  width: 1024px;
+  max-width: 1024px;
   margin: 0 auto;
 }
 
@@ -102,6 +103,7 @@ h1 span {
   border: 2px solid black;
   padding: 10px;
   border-radius: 10px;
+  align-items: center;
 }
 
 .display-onglet:hover {
@@ -118,17 +120,29 @@ h1 span {
   height: 400px;
   margin-top: 20px;
   display: flex;
+  display: flex;
+  gap: 3px;
 }
 
-.img-principale {
-  width: 650px;
+.enfant1 {
+  flex: 55%;
+}
+.enfant2 {
+  flex: 45%;
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.enfant1 img {
+  width: 100%;
   height: 400px;
-  margin-right: 5px;
+  /* margin-left: 5px; */
 }
 
 .enfant2 img {
-  height: 200px;
-  width: 370px;
+  height: 50%;
+  width: 100%;
 }
 
 .photos-paris img {
@@ -264,4 +278,63 @@ footer p {
 }
 footer a:hover {
   color: #fe5d5d;
+}
+
+/* Reponsive */
+
+@media (max-width: 1184px) {
+  .container {
+    margin: 0 10px;
+  }
+}
+
+@media (max-width: 1024px) {
+  header .menu-button {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  header .logo {
+    padding: 10px;
+  }
+  .container {
+    margin: 0 10px;
+  }
+  .onglet {
+    overflow-x: scroll;
+  }
+
+  .display-onglet {
+    flex: 33.33%;
+    flex-shrink: 0;
+  }
+  .under-header h1 {
+    font-size: 30px;
+  }
+  .map-intro .text p {
+    font-size: 15px;
+    margin-top: 20px;
+    line-height: 20px;
+  }
+
+  .divertir-bandeau {
+    display: block;
+  }
+
+  .divertir-scroll-item {
+    flex: 50%;
+    flex-shrink: 0;
+  }
+
+  .photos-paris .enfant2 {
+    display: none;
+  }
+  .map-intro .text {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  .map-intro .map {
+    display: none;
+  }
 }
