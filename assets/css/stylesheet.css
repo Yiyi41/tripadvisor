@@ -41,6 +41,7 @@ header {
 .menu {
   display: flex;
   align-items: center;
+  gap: 5px;
 }
 
 .menu p {
@@ -80,7 +81,6 @@ header {
 h1 {
   font-size: 50px;
   font-weight: 1000;
-  /* border: 3px solid red; */
   margin-top: 20px;
 }
 
@@ -92,7 +92,6 @@ h1 span {
   display: flex;
   justify-content: space-between;
   margin-top: 20px;
-
   gap: 10px;
 }
 
@@ -108,10 +107,9 @@ h1 span {
 
 .display-onglet:hover {
   background-color: black;
-}
-.display-onglet p:hover {
   color: white;
 }
+
 .display-onglet p {
   font-size: 15px;
 }
